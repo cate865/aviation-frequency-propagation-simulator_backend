@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>AFPS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./index.html">Aviation Frequency Propagation Simulator</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="loginbox">
+        <div class="left">
+            <h1>Add Receiver</h1>
+            <form onsubmit="event.preventDefault(); onReceiverDetailsSubmit();">
+                <input type="text" name="Latitude" placeholder="Latitude" id="Latitude" />
+                <input type="text" name="Longitude" placeholder="Longitude" id="Longitude" />
+                <input type="text" name="Coverage" placeholder="Coverage" id="Coverage" />
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <h2>All Receivers</h2>
+
+    <table id="allus">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Coverage</th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "aviation-frequency-propagation-simulator_backend",
+  "version": "1.0.0",
+  "description": "Aviation Simulator API",
+  "main": "index.js",
+  "type": "module", 
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cate865/aviation-frequency-propagation-simulator_backend.git"
+  },
+  "keywords": [
+    "receivers"
+  ],
+  "author": "Catherine Muthoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cate865/aviation-frequency-propagation-simulator_backend/issues"
+  },
+  "homepage": "https://github.com/cate865/aviation-frequency-propagation-simulator_backend#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4"
+  }
+}
