@@ -8,6 +8,7 @@ import pkg1 from 'body-parser';
 const { urlencoded, json: _json } = pkg1;
 import router from "./routes/receivers.js";
 import dotenv from "dotenv";
+import fs from "fs";
 
 dotenv.config();
 
@@ -38,6 +39,12 @@ db.once("open", function () {
 var server = app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
   
+});
+
+app.get('/', (req, res)=>{
+    res.writeHead(200, { 'Content-Type':'text/html'});
+    html = fs.readFileSync('./templates/index.html');
+    res.end(html);
 });
 
 export default app;
