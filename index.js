@@ -42,8 +42,8 @@ var server = app.listen(port, () => {
 });
 
 app.get('/', (req, res)=>{
-    res.writeHead(200, { 'Content-Type':'text/html'});
-    html = fs.readFileSync('./templates/index.html');
+    res.writeHead(200, { 'Content-Type':'text/html' });
+    html = fs.readFileSync('./index.html');
     res.end(html);
 });
 
