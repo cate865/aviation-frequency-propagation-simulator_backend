@@ -30,7 +30,7 @@ router.get("/", async (request, response) => {
   }
 });
 
-//Get a given product given the id of the product
+// Delete a receiver by id
 router.get('/delete/:id', async (req,res) => {
     const _id =  req.params.id
    
